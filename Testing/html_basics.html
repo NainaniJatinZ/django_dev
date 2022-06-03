@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Basics Part Three</title>
+    <!-- <link rel="stylesheet" href="css_basics.css"> -->
   </head>
   <body>
     <!-- Link for all the elements/tags: -->
@@ -41,6 +42,125 @@
             </ol>
         </ul>
     </ol>
+
+    <img src="django.png" alt="">
+    <img src="missing.png" alt="Uh oh! Missing Picture File">
+
+    <!--  Default file call (relatie path to backend)-->
+    <a href="htmlBasicsTwo.html">Link to another HTML file</a>
+
+
+    <!-- Explicit http tag -->
+    <a href="http://www.facebook.com">Link to Facebook!</a>
+    
+    <table border="2">
+
+
+        <thead>
+          <th>Country Name</th>
+          <th>Country Flag</th>
+          <th>GDP (Millions of USD)</th>
+        </thead>
+        <tr>
+          <td>USA</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png" alt=""></td>
+          <td> 18,561,930</td>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png" alt=""></td>
+          <td> 2,250,990</td>
+        </tr>
+        <tr>
+          <td>United Kingdom</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png" alt=""></td>
+          <td>2,649,890</td>
+        </tr>
+    
+    </table>
+    <!--  You can specify the input type-->
+    <!--  Reference Links-->
+    <!-- http://www.w3schools.com/TAGs/att_input_type.asp -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+
+    <!--Actions: where we send the data -->
+    <!--Method: get/post HTTP method -->
+    <form>
+
+
+        <h1>Log In</h1>
+        <h2>Please Input your Password and Email</h2>
+        <input type="email" name="useremail" value="Email Here">
+        <input type="password" name="password" value="Password">
+        <input type="submit" >
+    
+        <h1>Choose a Color!</h1>
+        <h2>Click on the Button when ready</h2>
+        <input type="color" >
+        <h2>Enter some Text!</h2>
+        <input type="text" name="" value="Text goes here">
+    
+    </form>
+    <form action="http://www.google.com" method="get">
+
+        <label>
+           EMAIL:
+           <input type="email" name="useremail" value="Email Here">
+        </label>
+  
+  
+        <label >
+          PASSWORD:
+        <input type="password" name="password" placeholder="Password">
+        </label>
+  
+        <!-- Validation -->
+        <!--  Usually do a lot more validation with Backend-->
+        <!--  Use the attribute: required to require input-->
+  
+        <label for="userinput">TEXT:</label>
+  
+  
+        <input type="text" id="userinput"name="input" placeholder="Enter Text Here" required>
+  
+        <input type="submit" >
+  
+    </form>
+    <h1>Hotel Feedback Form!</h1>
+
+      <!-- Things we will cover
+      1. Linking Radio Buttons
+      2. Drop-down Menus
+      3. Text Area inputs -->
+
+
+        <form method="get">
+          <h3>Are you from inside the USA? Or outside?</h3>
+          <label for="inside">Location:</label>
+          <input type="radio" id="inside" name="loc_choice" value="">
+
+          <label for="outside">Outside:</label>
+          <input type="radio" id="outside" name= "loc_choice" value="out">
+
+
+          <p>How was your service? (3 being the best)</p>
+          <select name="stars">
+            <option value="Great">3</option>
+            <option value="Okay">2</option>
+            <option value="Bad">1</option>
+          </select>
+
+
+          <p>Any other Feedback?</p>
+
+          <textarea name="name" rows="8" cols="80"></textarea>
+
+
+          <input type="submit" name="" value="Submit Feedback">
+
+
+        </form>
+
 
   </body>
 </html>
